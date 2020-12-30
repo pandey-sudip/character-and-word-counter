@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+
+}
+.text{
+    margin-top: 5px;
+    text-align: center;
+}
+#counter{
+    height: 60vh;
+    width: 65vw;
+    background-color: teal;
+}
+#section{
+    margin-top: 15px;
+    text-align: center;
+}
+textarea{
+    outline: none;
+    font-size: 20px;
+}
+.result1{
+    margin-top: 40px;
+    margin-left: 55px;
+    position: absolute;
+}
+.result2{
+    margin-top: 40px;
+    margin-left: 605px;
+    position: absolute;
+
+    text-align: right;
+}

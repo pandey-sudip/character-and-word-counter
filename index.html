@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character and Word Counter Using JavaScript</title>
+</head>
+
+<body>
+    <div id="counter">
+        <div class="text">
+            <h1>Live Charcter and Word Counter Using JavaScript</h1>
+        </div>
+        <div id="section">
+            <textarea name="" onkeyup="Count()" id="input" cols="50" rows="10"></textarea>
+        </div>
+        <div id="results">
+            <div class="result1">
+                <h1 id="characters"></h1>
+            </div>
+            <div class="result2">
+                <h1 id="words"></h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function Count() {
+        var inp = document.getElementById('input').value;
+        document.getElementById('characters').innerHTML="Total Characters:"+inp.length;
+
+
+        let countWords=inp.match(/\w /g);
+        document.getElementById('words').innerHTML="Total Words:"+countWords.length;
+    }
+</script>
+
+</html>
